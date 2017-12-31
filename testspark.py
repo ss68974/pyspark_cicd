@@ -5,7 +5,7 @@ from pyspark import SparkContext, SparkConf
 
 sc = SparkContext()
 
-print('First Spark Program')
+print("First Spark Program")
 
 text_file = sc.textFile("D:\Sample files\\wordcount.txt")
 counts = text_file.flatMap(lambda line: line.split(" ")) \
