@@ -13,5 +13,3 @@ counts = text_file.flatMap(lambda line: line.split(" ")) \
              .reduceByKey(lambda a, b: a + b)
 for x in counts.collect():
     print(x)
-
-
