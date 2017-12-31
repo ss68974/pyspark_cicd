@@ -9,14 +9,15 @@
 """
 
 import sys
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def setup_package():
     needs_sphinx = {'build_sphinx', 'upload_docs'}.intersection(sys.argv)
     sphinx = ['sphinx'] if needs_sphinx else []
+    packages = find_packages()
     setup(setup_requires=['six', 'pyscaffold>=2.5a0,<2.6a0'] + sphinx,
-          use_pyscaffold=True)
+          use_pyscaffold=True),
 
 
 if __name__ == "__main__":
