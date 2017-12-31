@@ -1,5 +1,5 @@
 import pytest
-import testspark
+import pyspark_cicd.testspark
 
 # this allows using the fixture in all tests in this module
 pytestmark = pytest.mark.usefixtures("spark_context")
