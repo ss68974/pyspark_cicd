@@ -4,7 +4,7 @@ import sys
 from pyspark import SparkContext, SparkConf
 
 def do_word_counts():
-    """ count of words in an rdd of lines """
+    """ count of words in an rdd of liness """
 
     sc = SparkContext()
 
