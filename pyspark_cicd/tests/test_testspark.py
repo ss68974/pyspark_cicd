@@ -1,9 +1,7 @@
 import pytest
-#import logger
-#import level
-import pyspark_cicd.pyspark_cicd.testspark
+from pyspark_cicd.pyspark_cicd import testspark
 
-print('1111')
+#print('11111')
 
 # this allows using the fixture in all tests in this module
 #pytestmark = pytest.mark.usefixtures("spark_context")
@@ -12,7 +10,6 @@ print('1111')
 # Can also use a decorator such as this to use specific fixtures in specific functions
 @pytest.mark.usefixtures("spark_context")
 
-#logging.getLogger("py4j").setLevel(logging.ERROR)
 
 def test_do_word_counts(spark_context):
     """ test that a single event is parsed correctly
