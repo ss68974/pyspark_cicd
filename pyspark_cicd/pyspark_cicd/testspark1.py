@@ -3,7 +3,7 @@ from operator import add
 from pyspark import SparkContext
 
 def do_word_counts(lines):
-    """ count of words in an rdd of sushanta liness """
+    """ count of words in an rdd of sushanta linessss """
 
     counts = (lines.flatMap(lambda x: x.split())
         .map(lambda x: (x, 1))
