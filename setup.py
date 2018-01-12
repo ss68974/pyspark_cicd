@@ -9,5 +9,5 @@ setup(
     license='',
     author='susha',
     author_email='sushanta.samantaray@gmail.com',
-    description='Pyspark ci cd testing automation'
+    description='Pyspark ci cd testing automation', install_requires=['pytest']
 )
