@@ -1,14 +1,14 @@
 import pytest
 from pyspark_cicd import testspark
-
+from test.conftest import *
 
 # this allows using the fixture in all tests in this module
-#pytestmark = pytest.mark.usefixtures("spark_context")
+#pytestmark = pytest.mark.usefixtures("spark_context", "hive_context")
 
 
 # Can also use a decorator such as this to use specific fixtures in specific functions
-#@pytest.mark.usefixtures("spark_context", "hive_context")
-@pytest.mark.usefixtures("spark_context")
+@pytest.mark.usefixtures("spark_context", "hive_context")
+#@pytest.mark.usefixtures("spark_context")
 
 
 def test_do_word_counts(spark_context):
