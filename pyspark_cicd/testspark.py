@@ -2,7 +2,7 @@ import os
 import sys
 from operator import add
 
-from pyspark import SparkContext
+from pyspark import SparkContext, SparkConf
 
 def do_word_counts(lines):
 
