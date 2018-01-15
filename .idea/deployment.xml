@@ -6,6 +6,8 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="C:/spark/python/lib/py4j-0.10.4-src.zip" web="/" />
+            <mapping local="C:/spark/python/lib/pyspark.zip" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -13,6 +15,8 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="C:/spark/python/lib/py4j-0.10.4-src.zip" web="/" />
+            <mapping local="C:/spark/python/lib/pyspark.zip" web="/" />
           </mappings>
         </serverdata>
       </paths>
