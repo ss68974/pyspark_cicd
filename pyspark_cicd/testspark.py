@@ -2,7 +2,7 @@ import os
 import sys
 from operator import add
 
-from pyspark import SparkContext, SparkConf
+from pyspark import SparkContext
 
 def do_word_counts(lines):
 
@@ -35,6 +35,7 @@ if __name__ == "__main__":
     sc = SparkContext()
     print("first spark program")
 
-    text_file = sc.textFile("D:\Sample files\\wordcount.txt")
+#    text_file = sc.textFile("/home/lipu/Sample_Files/wordcount.txt")
+    text_file = sc.textFile("D:\Sample files\wordcount.txt")
     print(do_word_counts(text_file))
 
