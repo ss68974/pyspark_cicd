@@ -1,5 +1,5 @@
 from operator import add
-# New Test Commit 3
+# Squash Test 3
 
 from pyspark import SparkContext
 
