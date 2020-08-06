@@ -1,10 +1,10 @@
-# New Test Commit 1
+# Squash Test 1
 import os
 import sys
 from operator import add
 
 # Test change to trigger build in jenkins
-# New Test Commit 2
+# Squash Test 2
 from pyspark import SparkContext, SparkConf
 
 def do_word_counts(lines):
